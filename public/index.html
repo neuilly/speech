@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-js consumer" lang="en">
+  <head>
+    <title>Crime Against Kansas</title>
+    <script>
+    (function(e, p){
+      var m = location.href.match(/platform=(win8|win|mac|linux|cros)/);
+      e.id = (m && m[1]) ||
+             (p.indexOf('Windows NT 6.2') > -1 ? 'win8' : p.indexOf('Windows') > -1 ? 'win' : p.indexOf('Mac') > -1 ? 'mac' : p.indexOf('CrOS') > -1 ? 'cros' : 'linux');
+      e.className = e.className.replace(/\bno-js\b/,'js');
+    })(document.documentElement, window.navigator.userAgent)
+    </script>
+    <script src="autotrack.js"></script>
+    <script>
+      new gweb.analytics.AutoTrack({
+          profile: 'UA-26908291-1'
+      });
+    </script>
+    <script src = "js/match.js"></script>    
+    <script src="chrome.min.js"></script>       
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+
+  <body>
+    <div id="speech">
+      <script type="text/javascript"> 
+      var speech = document.getElementById("speech");
+      for (var i = 0; i<196;i++){
+        var word = new Image();
+        word.src = "images/"+i+".jpg";
+        word.className = "words";
+        word.id = "word_"+i;      
+        speech.appendChild(word);
+      }
+      </script>
+    </div>
+    <div id = "left-over">
+      <span class="final" id="final_span"></span> 
+      <span class="interim" id="interim_span"></span>
+    </div>     
+
+    <script src = "js/Main.js"></script>    
+
+  </body>
+</html>

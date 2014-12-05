@@ -1,0 +1,10 @@
+{
+  "name": "speechAPI",
+  "description": "speech app",
+  "version": "0.0.1",
+  "main": "app.js",
+  "dependencies": {
+    "express": "3.x.x",
+    "socket.io" :"*"
+  }
+}
